@@ -1,0 +1,257 @@
+[SUBMENU_START:Ironworking]
+
+.Bog Iron.    "Stone"   /90/
+{Shovel}
+{[TERRAIN:spruce_mire pine_mire open_mire]}   'Be in a Mire'  
+
+.Charcoal.  (20) "Firewood" *SURVIVAL* /45/ \5d\ |-1| [patch:5]
+{Slender trunk}  (3) [remove][ground] '+for a chimney'  
+{Firewood}  (50) [remove][ground][patchwise] '+piled around it'
+{Shovel}       '+to cover it all in soil'
+{Fire}       '+lit nearby'
+{Torch}    [remove]  '+to transfer the flame'
+   
+.Smelt Iron.    (2) "Rock" *SURVIVAL* |-1| /1h/  \1d\ [patch:5]
+{Shovel}      '+to dig a pit'
+{Bog Iron}   [remove] [patchwise]  [name:Bloom of %s] [naming:last word]
+{Charcoal}  (10) [remove] [patchwise] [ground]  
+{Fire}       '+lit nearby'
+{Torch}    [remove]  '+to transfer the flame'
+
+.Hammer Bloom.   "Rock"   /3h/  [patch:5]
+{Bloom of Iron}   [remove] [patchwise]   [name:Wrought %s] [naming:last word]
+{Charcoal}  (6) [remove] [ground] [patchwise]
+{Hammer}
+{Anvil}    [ground] '+nearby'
+{Fire}       '+lit nearby'
+
+.Hammer ROUGH Blades.  "Hunting Horn" /90/
+{Rough *}   [remove]   'A rough blade' [name:Soft %s] [naming:last word]
+{Charcoal}  (3) [remove] [ground]
+{Hammer}
+{Anvil}    [ground] '+nearby'
+{Fire}      '+lit nearby'
+
+.Temper SOFT Blades.  "Hunting Horn"  /1h/
+{Soft *}   [remove]   'A soft blade' [name:Dull %s] [naming:last word]
+{Charcoal}  (2) [remove] [ground]
+{Water}   #1# [remove]   '+for quenching'
+{Fire}      '+lit nearby'
+
+.Sharpen DULL Blades.  "Hunting Horn"  /45/
+{Dull *}   [remove]  'a dull blade' [name:Sharp %s] [naming:last word]
+{Rock}
+   
+.Spearhead.    "Hunting Horn"  /1h/  
+{Wrought Iron}   [remove]    [name:Rough Spearhead]
+{Charcoal}  (2) [remove] [ground]
+{Hammer}
+{Anvil}    [ground] '+nearby'
+{Fire}      '+lit nearby'
+
+.Knifeblade.    "Hunting Horn"  /1h/
+{Wrought Iron}   [remove]    [name:Rough Knifeblade]
+{Charcoal}  (2) [remove] [ground]
+{Hammer}
+{Anvil}    [ground] '+nearby'
+{Fire}      '+lit nearby'
+
+.Small-Axehead.   "Hunting Horn"  /150/
+{Wrought Iron}  (2) [remove]    [name:Rough Small-Axehead]
+{Charcoal}  (5) [remove] [ground]
+{Hammer}
+{Anvil}    [ground] '+nearby'
+{Fire}      '+lit nearby'
+
+.Large-Axehead.   "Hunting Horn"  /4h/
+{Wrought Iron}  (4) [remove]    [name:Rough Large-Axehead]
+{Charcoal}  (8) [remove] [ground]
+{Hammer}
+{Anvil}    [ground] '+nearby'
+{Fire}      '+lit nearby'
+
+.Sickleblade.    "Hunting Horn"  /90/
+{Wrought Iron}   [remove]    [name:Rough Sickleblade]
+{Charcoal}  (3) [remove] [ground]
+{Hammer}
+{Anvil}    [ground] '+nearby'
+{Fire}      '+lit nearby'
+
+.Shortsword-blade.   "Hunting Horn"  /3h/
+{Wrought Iron}  (2) [remove]    [name:Rough Short-Swordblade]
+{Charcoal}  (6) [remove] [ground]
+{Hammer}
+{Anvil}    [ground] '+nearby'
+{Fire}      '+lit nearby'
+
+.Shovelblade.    "Hunting Horn"  /90/
+{Wrought Iron}  (2) [remove]    [name:Rough Shovelblade]
+{Charcoal}  (3) [remove] [ground]
+{Hammer}
+{Anvil}    [ground] '+nearby'
+{Fire}      '+lit nearby'
+
+.Handful of Rings.   "Hunting Horn"    [patch:5]
+{Wrought Iron}   [remove] [patchwise]
+{Charcoal}   [remove] [ground] [patchwise]
+{Hammer}
+{Anvil}    [ground] '+nearby'
+{Fire}      '+lit nearby'
+
+.Iron Hoop.   "Hunting Horn"    [patch:5]
+{Wrought Iron}   [remove] [patchwise]
+{Charcoal}   [remove] [ground] [patchwise]
+{Hammer}
+{Anvil}    [ground] '+nearby'
+{Fire}      '+lit nearby'
+
+[SUBMENU_END:Ironworking]
+
+[SUBMENU_START:Iron Crafts]
+
+.Anvil.    "Stone"  /4h/
+{Bloom of Iron}  (5) [remove]
+{Charcoal}  (10) [remove] [ground]
+{Fire}      '+lit nearby'
+{Rock}      '+to pound it'
+{Block of wood}   [remove] '+for a base'
+{Axe} <Carving Axe>
+
+.Hammer.    "Mace"  /3h/
+{Bloom of Iron}  (2) [remove]
+{Charcoal}  (6) [remove] [ground]
+{Fire}      '+lit nearby'
+{Rock}      '+to pound it'
+{Anvil}    [ground] '+nearby' '+nearby'
+{Wooden Stake}    [remove] '+for a handle'
+
+.Knife.    *Carpentry*  /15/
+{Sharp Knifeblade}  [remove]
+{Tying equipment}  [remove]
+
+.Spear.    *Carpentry*  /25/
+{Sharp Spearhead}  [remove]
+{Staff}    [remove]
+{Tying equipment}  [remove]
+{Knife}
+
+.Handaxe.   *Carpentry*  /35/
+{Sharp Small-Axehead}  [remove]
+{Wooden stake}   [remove] '+for a handle'
+{Tying equipment}  [remove]
+{Knife}
+
+.Woodsman's Axe.  *Carpentry*  /50/
+{Sharp Large-Axehead}  [remove]
+{Staff}   [remove]
+{Tying equipment} (2) [remove]
+{Knife}
+
+
+.Carving axe.   *Carpentry* %-10% /55/
+{Sharp Small-Axehead}  [remove]
+{Wooden stake}   [remove] '+for a handle'
+{Tying equipment}  [remove]
+{Knife}
+
+.Splitting Axe.  *Carpentry*  /50/
+{Sharp Large-Axehead}  [remove]
+{Staff}   [remove]
+{Tying equipment} (2) [remove]
+{Knife}
+
+.Broad Axe.  *Carpentry*  /50/
+{Sharp Large-Axehead}  [remove]
+{Staff}   [remove]
+{Tying equipment} (2) [remove]
+{Knife}
+
+.Sickle.   *Carpentry*  /30/
+{Sharp Sickleblade}  [remove]
+{Wooden stake}   [remove] '+for a handle'
+{Tying equipment}  [remove]
+{Knife}
+
+.Shortsword.   *Carpentry*  /60/
+{Sharp Short-swordblade} [remove]
+{Wooden stake}   [remove] '+for a handle'
+{Leather}  #0.5# [remove] '+for the grip'
+{Tying equipment}  [remove]
+{Knife}
+
+.Shovel.   *Carpentry*  /45/
+{Sharp Shovelblade}  [remove]
+{Staff}   [remove]
+{Tying equipment}  [remove]
+{Knife}
+
+.Pot.    *Carpentry* /90/
+{Wrought Iron}   [remove]
+{Charcoal}  (3) [remove] [ground]
+{Hammer}
+{Anvil}    [ground] '+nearby'
+{Fire}      '+lit nearby'
+
+
+.Wooden tub.  /120/
+{Iron Hoop} [remove]
+{Board} (8) [remove]
+{Axe} <Handeaxe>
+{Knife}
+
+
+
+[SUBMENU_END:Iron Crafts]
+
+[SUBMENU_START:Iron Armors]
+
+.Long Ring Cowl.     /30/
+{*eather cap}  #1# [remove] 'Leather Cap'
+{Handful of Rings}  [remove]
+{Tying equipment} (2) [remove]
+{Knife}
+
+.Ring Shirt.       /180/
+{*eather shirt}  #6# [remove] 'Leather Shirt'
+{Handful of Rings} (6) [remove]
+{Tying equipment} (6) [remove]
+{Knife}
+
+.Long Ring Hauberk.     /240/
+{*eather shirt}  #6# [remove] 'Leather Shirt'
+{*eather belt}  #1# [remove] 'Leather Belt'
+{Leather}  #2# [remove]
+{Handful of Rings} (8) [remove]
+{Tying equipment} (8) [remove]
+{knife}
+
+.Ring Leggings.      /210/
+{*eather Leggings} #5.5# [remove] 'Leather Leggings'
+{Handful of Rings} (7) [remove]
+{Tying equipment} (7) [remove]
+{Knife}
+
+.Ring Gauntlets.      /45/
+{Leather}  #1# [remove]
+{Handful of Rings}  [remove]
+{Tying equipment}  [remove]
+{Knife}
+
+.Roundshield.  *CARPENTRY*    /180/
+{Iron Hoop} [remove]
+{Leather} #1# [remove] '+for handle'
+{Board} (4) [remove]
+{Axe}
+
+.Buckler.       /120/
+{Wrought Iron} (3) [remove]
+{Leather} #1# [remove] '+for handle'
+{Charcoal} (3) [remove] [ground]
+{Hammer}
+{Anvil} [ground] '+nearby'
+{Fire} '+lit nearby'
+
+[SUBMENU_END:Iron Armors]
+
+
+-end

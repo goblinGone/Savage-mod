@@ -1,0 +1,18 @@
+[SUBMENU_START:Herbalism]
+
+.Alembic. "Pot" *COMMON* /1h/   
+{Skin} [remove]
+{Pot} [remove]
+{Tying equipment} (2) [remove]
+[CONT_CAPACITY:6]
+[WEIGHT:5]
+[TILEGFX:al-alembic]
+
+.Mortar & Pestle. "Pot" *CARPENTRY* /30/
+{Wooden bowl} [remove]
+{Branch} [remove]
+[CONT_CAPACITY:4]
+[WEIGHT:1]
+[TILEGFX:al-mortar]
+
+[SUBMENU_END:Herbalism]

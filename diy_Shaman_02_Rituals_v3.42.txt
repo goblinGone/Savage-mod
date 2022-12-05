@@ -1,0 +1,444 @@
+
+
+////////////////////////////////////////////////////////////////////////////
+// CAUTION: reading the recipes will spoil the fun of your eureka-moments //
+////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+[SUBMENU_START:Shamanic Rituals]
+
+
+///////////////////////////////
+// TRAINING THE RITUAL SKILL //
+///////////////////////////////
+
+
+
+
+
+//
+.Luonnotar Dreaming. "Wooden Bowl" [effort:-1] [noquality] *RITUAL* /33/ %100% |+2| 
+{[TERRAIN:grove thicket cliff lake]}				'Be in a peaceful place' 
+{[TILE:ground]}										'Be outside'
+{*Totem Bench}  	[ground] [noquality]			'Sit on a bench' 
+{* Ritual Bowl} 	[ground] [noquality] [remove]	'Sound your ritual bowl' 
+{Fire} 				[ground] [noquality]
+{Tallow Candle} 	[remove] [noquality]			'Light a candle' 
+[NAME:Scorched Ritual Bowl]
+
+
+
+//COULD BE OUT
+//.Read a fish' intestines. "Linen veil" [effort:0] [noquality] *RITUAL* /10/ |+2| 
+//{Raw fish} 				[remove]
+//{Fisher's Knife} 
+//{*Naideh Headcloth} 	[remove]	'Naideh Headcloth' 
+//[NAME:Smelly Naideh Headcloth]
+
+
+//learn anatomy [obtain thighbone]
+.Study anatomy. "Wooden stake" (2) [effort:2] [phys:hands,arms] *PHYSICIAN* /210/ %5% |+2| 
+{*dead *} 				[ground] [noquality] [remove]		'Body to dissect (Seiso veri)'	
+{Knife} 				<small knife>
+{Fire} 														'+to burn the remains'
+{Tuoni Bone Necklet} 	[optional]
+[NAME:Thighbone]
+[WEIGHT:1.5]
+[TYPE:tool]
+[TILEGFX:_sh_bone]
+
+
+//Revitalize
+.Call Otso for strength. "Kaumolais Knife" [effort:-1] *RITUAL* /12/ %-50% |+1|
+{[TILE:ground]} 								'Hear Otso roaring'
+{*Bear cut} 		[remove] [noquality] 		'Sacrifice a raw bear cut'
+{*Kaumolais knife} 	[remove] 					'Lend out your Kaumolais knife'		
+[NAME:Stained Kaumolais knife]
+
+
+//make it a root as well, take the yellow/white blob, get some useful fat
+.Drive out Hiisi.	"Hiisi Fat root"	[phys:hands,arms] [effort:0] [noquality]	*RITUAL*	/25/	%100%	|+0|	[patch:10]
+{Elk Spirit Drum}								'Drum and chant for the Elk'	
+{Elk cut}		(5)		[remove] [patchwise]	'Elk meat'	
+{*Ritual Bowl}			[ground]				'Ritual Bowl'
+{*Shaman Staff} 		[ground]				'Wield Shaman staff (magically)'
+{Fire}											'+(hear it whimper)'	
+[NAME:Hiisi Fat]
+
+
+
+.New House Ritual.	"Board" 	[effort:1][noquality]	*RITUAL*	/39/		|+1|
+{[TILE:Inside of a building]}			'Bow to the corners'	
+{Tallow Candle}				[remove]	'Light a candle'
+{*Flatbread}	(2)			[remove]	'Offer bread'
+{Salt}			#0.4#		[remove] 	
+{Board}						[remove]	
+{Knife}
+{*Ceremonial Mantle}					'Ceremonial Mantle worn'
+[NAME:Board with "SOKKELO"]
+[WEIGHT:7]
+[TYPE:valuable]
+[TILEGFX:_sh_mboard]
+
+
+.Dry earth Ritual. "Northern Bilberries" 	[effort:0] *RITUAL* 	/9/ 	%-35% |-2|
+{Piru Warden}			[ground]			'Be protected from Piru'
+{*Naideh Headcloth}							'Naideh Headcloth worn'
+[NAME:Pineal Nectar]
+
+
+//in conjunction with the bow
+.Sacrifice to Nyyrikki. "Wooden stake" (2) [effort:2] [phys:hands,stance] *RITUAL* %20% /100/ |+2|
+{* ram *}			[ground] [remove] [noquality]	'A named dead Ram'	
+{[NEARBY_TILE:big rock]}							'Sacrifice on a Seita stone'
+{Hunting Knife}
+{Fire}				[ground]						'+nearby'
+{Shaman Hood}
+{*Shaman Staff}		[optional]						'Shaman Staff and magic words'
+[NAME:Ram horn] 
+[WEIGHT:2]
+[TYPE:tool]
+[PRICE:2]
+[TILEGFX:ar-leabelt]
+
+
+.Sacrifice to Akras. "Board"	[noquality][effort:0] [phys:hands]	*AGRICULTURE*	%100% /19/	|+1|
+{[TERRAIN:field]}					'Go out in the field'
+{[NEARBY_TILE:big rock]}			'Sacrifice on a Seita stone'
+{Gift to Akras} 	[remove]		'A gift to Akras'
+{* Leaves}			(3)	[remove]	'Leaves'
+{* Root}			(3) [remove]	'Roots'
+{*Shaman Staff}						'Shaman staff & Magic words'
+{Board}				[remove]
+{Knife}
+[NAME:Board with "ALKU"]
+[WEIGHT:7]
+[TYPE:valuable]
+[TILEGFX:_sh_mboard]
+
+
+.Sacrifice to Illmarinen. "Board"	[noquality][effort:0] [phys:hands]	*BUILDING*	%100%	/7/ 	|+2|
+{Fire}								'Have a large fire going'
+{Knife}				[remove] 		'Feed it a knife'
+{Axe}				[remove]		'Feed it an axe'
+{Iron *}	#1#		[remove]		'Iron'
+{Board}				[remove]
+[NAME:Board with "JULKAISU"]
+[WEIGHT:7]
+[TYPE:valuable]
+[TILEGFX:_sh_mboard]
+
+
+
+//OUT AS WELL
+//ritual counterpart of sacrificing a fish
+//.Cleanse your body. "Linen veil" [phys:hands] [effort:1] *RITUAL* /15/ %5% |+2| 
+//{[TILE:water]} 							'Enter calm water (pref. naked)'
+//{*Milkweed Leaves} 	#0.2# 	[remove]	'Milkweed leaves'
+//{Water} 				#1000# 	
+//{*Naideh Headcloth} 			[remove] 	'Headcloth to dry yourself with'	
+//[NAME:White Naideh Headcloth] 
+
+
+
+.Snake hunter ritual. "Blunt arrow" [phys:hands] [effort:1] *TRAPPING* %50% /30/ |+2|
+{[TERRAIN:open_mire spruce_mire pine_mire]}				'Enter the bog after midnight'
+{[NEARBY_TILE:water]}}									'Situate yourself next to water'
+{Blunt arrow}					[remove][noquality]		'+to enchant'
+{*Bronze*}						[remove][noquality]		'Offer a bronze trinket'
+{*Spirit Drum}											'Drum soft and magically'
+[NAME:Blunt arrow]
+
+
+
+//
+.Bind an Animal-spirit. "Leather Rope" [effort:1] [noquality] [phys:hands,one-armed] *RITUAL* /37/ %30% |+2|
+{Totem Pole}						[ground]													'Go around the Totem Pole'
+{Fire}								[ground]
+{*Leather Rope} 					[remove]													'Leather rope'
+{Dye - *}					#0.2#	[remove] [name:%s Knotted Tille rope][naming:last word]		'Same color Dye'
+{* carcass*} 						[ground] [remove]											'Deceased animal' 
+{Magic Athame}																					'Athame'
+{Irresistible concoction}	(1)		[remove]													'Magic Bait'
+[TYPE:valuable]
+
+
+
+//in conjunction with the previous, in potential the fastest way to upgrade ritual skill
+.Absorb Tilles. 	"Leather Rope" [effort:5][noquality]	*RITUAL*	/12/	%100%	|+2| [patch:9]
+{[TILE:inside of a kota]}							'Be inside a heated tent'
+{Fire}												'Have a fire burning'
+{* Knotted Tille rope}	[remove] [patchwise] 		'Release the knot'
+{Sauna Scoop}			
+{Water}				#2#	[remove] 
+{Serpent Stone} 		[remove] 					'+(sacrifice)'
+{* Spirit Drum}										'Chant and Drum (magic)'
+[NAME:Brittle leather rope]
+
+
+
+
+
+
+//
+.Ritual Burial. "Stone" [effort:0] [noquality] [phys:stance,arms] *RITUAL* /200/ \1\ %100% |+2|
+{[TILE:hole in the ground]}															'Dig a hole'
+{*Shaman Staff} 																	'Wield Shaman staff (magically)'
+{*Ceremonial Mantle}																'Ceremonial Mantle worn'
+{*dead *} 				[remove] [ground] [name:%s Uhrikivi] [naming:last word]		'Dead body' 
+{Stone} 	(3) 		[remove] 			 										'+for Uhrikivi' 
+{Rock}		(30)		[remove]	
+{Knife} 																			'+for Karsikko-marking'
+{* Spirit Drum}																		'Chant and drum'
+[WEIGHT:200]
+[TILEGFX:_sh_uhri]
+
+
+
+
+
+//
+.Honor the Death. "Branch" [effort:0] [phys:hands,stance] [noquality] *RITUAL* /35/ \1\ |+1|
+{[TILE:hole in the ground]}						    'Stand before the grave'
+{*Uhrikivi}					[ground]				'Read out loud the Uhrikivi' 
+{* Flowers}  		(10) 	[remove] [noquality] 	'Same flowers'			[name:%s Bouquet][naming:original] 
+{* Leaves}  		(3) 	[remove] [noquality]	'Various leaves'
+{Spruce twig} 		(2)		[remove] [noquality]
+{*Ceremonial Mantle}								'Ceremonial Mantle worn'
+{*Shaman Staff} 									'Shaman Staff and magic words'
+[TYPE:food]
+[SPOILAGE_DAYS:14]
+[TILEGFX:_sh_bouq]
+[WEIGHT:2]
+
+
+
+
+.Honor Tapio. "Board"	[noquality][effort:0] [phys:hands]	*HERBLORE*	%100%	/12/ 	|+1|
+{[NEARBY_TILE:Rowan]}					'Stand next to a Rowan'
+{Water}				#7#		[remove]				
+{Dye - *}			#0.3#	[remove] 	'Dye (magic symbols)'
+{Knife}								
+{Board}						[remove]
+[NAME:Board with "PUHTAUS"]
+[WEIGHT:7]
+[TYPE:valuable]
+[TILEGFX:_sh_mboard]
+
+
+
+
+
+
+
+
+//OUT?
+//more of a joke, learn a bit of weatherlore while you're at it, still you need this one eventually [maybe]
+//.Ask for good weather.	"Branch" [effort:0] *WEATHERLORE*  /3/	%100% |+2|
+//{[NEARBY_TILE:rowan]}									'Ask Rowan'
+//{Noaidi's mushroom}		(1)		[remove] [noquality]	
+//{*Naideh Headcloth}										'Naideh Headcloth worn'
+//{*Shaman Staff} 										'Wield Shaman staff (magically)'	
+//[TYPE:tool]
+//[name:Forecast]
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////
+// THE FOUR SACRIFICES THAT ENABLE THE SPIRITUAL VOYAGE //
+//////////////////////////////////////////////////////////
+
+
+
+//bury a wooden mug stuffed with wolf fat, leave your stone on top and retrieve it after a week
+.Honor the Earth. "Egg" [phys:stance,arms] [effort:0] *RITUAL* /43/ \7d\ %0% |+2| 
+{[TERRAIN:barren]} 								'Tread into a barren landscape'
+{[TILE:hole in the ground]}						'Enter a hole in the ground'
+{Wooden Mug}			[remove] [noquality] 	'Take a wooden mug'
+{Wolf Fat} 				[remove] [noquality] 	'Stuff it with wolf fat'
+{Rock} 					[remove] [noquality]	'Place the rock inside'	
+{Shovel}				[noquality]	
+{*Shaman Staff} 								'Wield Shaman staff (magically)'
+[NAME:Earth Stone]
+[TYPE:valuable]
+[PRICE:10]
+[WEIGHT:1]
+
+
+//
+.Honor the Air. "Egg" [phys:stance,arms] [effort:0] *RITUAL* /100/ \1d\ %0% |+2| 
+{[TERRAIN:mountain]} 							'Stand on top of a mountain'
+{[TILE:Big rock]}								'Stand on a Seita stone'
+{Rock} 			(1)		[remove] [noquality] 	'Put a rock on it'		
+{Feather}		(100)	[remove] [noquality]	'Feathers'
+{Leather} 		#0.3# 	[remove] 	 			'Bird leather'
+{*Arrow} 		(4)		[remove] 				'Shoot an arrow'
+{*bow}											'You need a bow'
+{* Spirit Drum} 								'Chant and drum (magically)'
+[NAME:Air Stone]
+[TYPE:valuable]
+[PRICE:10]
+[WEIGHT:1]
+
+
+
+//offer a large amount of raw meat to the fire, the stone will be cooled down after a few hours
+.Honor the Fire. "Egg" [phys:stance,arms] [effort:0] *RITUAL* /33/ \154\ %0% |+2| 
+{Fire} 				[ground] 				'Light a fire'
+{Rock} 		(1)		[remove] [noquality]	'Place a rock in the center'	
+{Raw meat} 	(30) 	[remove] [noquality]	
+{*Blood}	#3#		[remove] [noquality]    'Blood'
+{[NEARBY_TILE:big rock]}					'Sacrific on a Seita Stone'
+{Hunting Knife} 	[ground]
+{*Shaman Staff} 							'Wield Shaman staff (magically)'
+[NAME:Fire Stone]
+[TYPE:valuable]
+[PRICE:10]
+[WEIGHT:1]
+
+
+
+//offer a large amount of raw fish wrapped in a beaver fur to the water, then meditate for half an hour
+.Honor the Water. "Egg" [phys:stance,arms] [effort:0] *RITUAL* /60/ \30\ %0% |+2| 
+{[NEARBY_TILE:river]} 							'Stand by the river'
+{Beaver Fur} 	#1# 	[remove]
+{Rock} 					[remove] [noquality]	'Wrap around a rock'
+{Raw fish} 		#20# 	[remove] [noquality] 
+{Fisher's Knife} 					
+{*Shaman Staff} 								'Wield Shaman staff (magically)'
+[NAME:Water Stone]
+[TYPE:valuable]
+[PRICE:10]
+[WEIGHT:1]
+
+
+
+//align the four elements in a holy ceremony in an attempt to gain permanent insights 
+.Invite the Serpent. "Egg" [phys:stance,arms] [effort:0] *RITUAL* /609/ %5% |+2| 
+{[TILE:cave floor]} 								'Find a secluded place in nature'
+{Earth Stone} 				[remove]		
+{Air Stone} 				[remove]
+{Fire Stone} 				[remove]
+{Water Stone} 				[remove]
+{Noaidi's mushroom extract}	[remove] [noquality] 	
+{Fire}												'Light a fire'
+{Tallow Candle}		(7)		[remove] [noquality]
+[NAME:Serpent Stone]
+[TYPE:valuable]
+[PRICE:100]
+[WEIGHT:4]
+
+
+//
+.Enter Tuonela.	"Ski stick" [effort:5] [noquality] *RITUAL* 	/667/ 	|+2|	%100%
+{Journey to Tuonela}		[remove]			'+(to eat)'
+{Raft}											'Raft out on the river'
+{*Decaying *bear carcass*}	[remove]			'A very dead suitable carcass'		
+{*Blood}				#2#	[remove]			'Blood'
+{Bear Fur}					[remove]
+{Wolf Shaman Staff}								'Wield the right Shaman Staff'
+{Return from Tuonela} 		[optional] [remove]	'+(to eat)'
+{[TILE:river]}									'Be sure! (magic howling)'
+[NAME:Howling cane]
+
+
+
+//
+
+
+
+
+
+////////////////////////////
+// RITUAL COMBAT TRAINING //
+////////////////////////////
+
+
+
+
+
+.Dance of Creation. "Board" [noquality][phys:stance] [effort:3] *DODGE*	/39/ |+1|	%100%
+{Totem Pole}		[ground]	'Dance around your totem'
+{Egg}				[remove]	'+from early summer'
+{Wondrous Mushroom} [remove]	'Magical fungus'
+{Board}				[remove]
+[NAME:Board with "PERA"]
+[WEIGHT:7]
+[TYPE:valuable]
+[TILEGFX:_sh_mboard]
+
+//.Rite of favourable weather. "Board" [noquality] [phys:stance] [effort:3] *WEATHERLORE* /23/ %100% |+2|
+//{Totem Pole}	 		[ground]	'Dance around your totem'
+//{*Ritual Drum}}					'Chant and Drum'
+//{Board}				[remove]
+//[NAME:Board with "???"]
+//[WEIGHT:7]
+//[TYPE:valuable]
+//[TILEGFX:_sh_mboard]
+
+
+
+//
+.Train with Kullervo. "Board" [noquality] [phys:stance,arms] [effort:4] *SWORD* /40/ |+2| %100% 
+{*Lynx cut} 		(1) 	[remove]  				'A piece of Lynx'
+{*Shaman Staff} 									'Wield your Staff magically'
+{[TILE:ground]}										'Call Kullervo'
+{*Broadsword} 										'Wield an eager broadsword'	
+{Roundshield}
+{Tuoni Bone Necklet}	 							'+worn'
+{Board}						[remove] [noquality]
+[NAME:Board with "ANTEEKSIANTO"]
+[WEIGHT:7]
+[TYPE:valuable]
+[TILEGFX:_sh_mboard]
+
+
+//
+.Train with Lemminkäinen. "Board" [noquality] [phys:stance,arms] [effort:4] *SPEAR* /45/ |+2| %100% 
+{*Wolf cut} 		(2) 	[remove]	 			'Share a wolf cut'
+{Broken arrow}		(1)		[remove] [noquality]	'+(combat testimony)'
+{*Shaman Staff} 									'Wield your Staff magically'
+{[TILE:ground]}										'Call Lemminkäinen'
+{*Spear} 			(1)								'Wield a spear'		
+{Shaman Hood} 										'+worn 
+{Board}						[remove] [noquality]
+[NAME:Board with "NOYRYYS"]
+[WEIGHT:7]
+[TYPE:valuable]
+[TILEGFX:_sh_mboard]
+
+
+//PATCH??
+.Shamanic Dance. "Burbot" [phys:stance,arms] [effort:2] *DODGE* /27/ |+2| %100% 
+{[TERRAIN:settlement]} 			'Come forward among the people'
+{* Talisman} 		[remove] 	'A talisman for the village'		
+{Tuoni Bone Necklet} 			'+worn'
+{*Ceremonial Mantle}			'Ceremonial mantle worn'
+{Saami Boots} 					'Shaman boots worn'
+{*Shaman Staff} 				'Wield your Staff'
+{* Spirit Drum} 				'Chant and drum! (magically)'
+[NAME:Arctic charr]
+
+
+
+
+
+//UNARMED??
+
+
+
+
+
+
+
+
+[SUBMENU_END:Shamanic Rituals]

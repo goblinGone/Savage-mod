@@ -1,0 +1,94 @@
+[SUBMENU_START:Fishing]
+
+.Net. *FISHING*     /3h/   |+1| 
+{Tying equipment} (30) [remove]
+{Knife} <Small Knife>
+{Slender trunk} (2) [ground] '+to help with weaving'
+{Rock} (5) [remove] '+for net weights'
+
+
+.Fishing Rod.  *CARPENTRY* /1h/ |-1| %30%
+{Staff} [remove]
+{Tying equipment} (3) [remove]
+{Block of wood} [remove] '+for fishing hook'
+{Knife}
+
+
+
+[SUBMENU_END:Fishing]
+
+
+[SUBMENU_START:utility article]
+
+
+.Soak Branches. "Firewood"  *COMMON*  /5/     \1d\  %-30%   [patch:5] |-2|
+{Branch} (20) [remove] [patchwise] [name:Soaked Branches]
+{Water} #1# [remove] [patchwise]
+
+.Primitive Cord.   "Cord"  *COMMON* /60/ %-30%  [patch:5] |-2|
+{Soaked Branches} [remove] [patchwise]
+
+.Sauna scoop. *CARPENTRY* /60/ %10% |-1|
+{Block of wood} [remove]
+{Board} [remove]
+{Axe} <Carving Axe>
+{Knife}
+
+
+[SUBMENU_END:utility article]
+
+[SUBMENU_START:weapon]
+
+.Primitive Stone Knife. "Small Knife" *COMMON* /2h/ |-1| %10%
+{Rock} '+for blade' [remove]
+{Rock} '+for knapping blade'
+{Branch} '+for handle' [remove]
+{Tying equipment} [remove] 
+
+.Primitive Stone Spear. "Light Spear" *COMMON* /1h/ |-1| %10%
+{Primitive Stone Knife} [remove]
+{Knife} '+to make handle'
+{Slender trunk} [remove]
+{Tying equipment} [remove]
+
+.Bow Stave. "Board" *CARPENTRY* %-10% /3h/ 
+{Log} [remove] [ground]
+{Axe} <Woodsman's Axe>
+
+.Shaped Bow Stave. "Board" *CARPENTRY*  %-10% /3h/ 
+{Bow Stave} [remove]
+{Axe} <Handaxe>
+
+.Unfinished Longbow. "Board" *CARPENTRY  %-10% /5h/ |+1|
+{Shaped Bow Stave} [remove]
+{Axe} <Carving Axe>
+{Knife}
+
+.Longbow. *CARPENTRY* %-10% /2h/ |+1|
+{Unfinished Longbow} [remove]
+{Leather} #2# [remove] '+for grip&backing'
+{Tying equipment} (2) [remove]
+{Axe}
+{Knife}
+
+[SUBMENU_END:weapon]
+
+
+
+[SUBMENU_START:transport]
+.Rough Dugout Hull. "Tree Trunk" *TIMBERCRAFT* /4h/
+{Tree Trunk} [ground] [remove] [noquality]
+{Axe}<Broad axe>
+
+.Burned-out Dugout Hull. "Tree Trunk" *TIMBERCRAFT* /3h/  \12h\
+{Rough Dugout Hull} [ground] [remove]
+{Fire} [ground]
+{Shovel} '+for moving hot coals'
+
+.Dugout Canoe. "Punt" *TIMBERCRAFT* /5h/  |1|
+{Burned-out Dugout Hull} [ground] [remove]
+{Axe}<Carving axe>
+
+[SUBMENU_END:transport]
+
+-end

@@ -1,0 +1,42 @@
+[SUBMENU_START:Barrel Making]
+
+.Small barrel. "Bag" [effort:2] [phys:arms,one-armed] *CARPENTRY* /30/
+{Board} (6) [remove] [ground]
+{Tying equipment} (3) [remove]
+{Knife}
+{Axe} <Carving axe>
+[TYPE:container]
+[CONT_CAPACITY:25]
+[WEIGHT:15]
+[MATERIAL:wood]
+[TILEGFX:r-sbar]
+
+.Large barrel. "Bag" [effort:3] [phys:arms,one-armed] *CARPENTRY* /50/
+{Board} (10) [remove] [ground]
+{Tying equipment} (6) [remove]
+{Knife}
+{Axe} <Carving axe>
+[WEIGHT:30]
+[TILEGFX:r-lbar]
+[MATERIAL:wood]
+[TYPE:container]
+[CONT_CAPACITY:50]
+
+.Brewing barrel. "Pot" [effort:3] [phys:arms,one-armed] *CARPENTRY*     /180/   
+{Board}	(6) [remove] [ground]
+{Tying equipment} (3) [remove]
+{Axe}	<Carving axe>
+{Knife}	
+[TILEGFX:br-bar]
+[CONT_CAPACITY:8]
+[WEIGHT:10]
+[PRICE:4]
+[NAME:Brewing barrel]
+
+.Barrel plug. "Branch" [effort:1] [phys:arms,one-armed] *CARPENTRY*     /15/ 
+{Branch} '+to use as a plug' [remove]
+{Knife}	'+to carve a loose plug'
+[NAME:Barrel plug]
+[TYPE:tool]
+
+[SUBMENU_END:Barrel Making]

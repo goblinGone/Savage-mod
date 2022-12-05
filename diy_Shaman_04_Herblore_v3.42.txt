@@ -1,0 +1,116 @@
+
+////////////////////////////////////////////////////////////////////////////
+// CAUTION: reading the recipes will spoil the fun of your eureka-moments //
+////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+[SUBMENU_START:Shamanic Herblore]
+
+
+
+//stays fresh much longer so you can space in winter prob.
+.Noaidi's mushroom extract. "Noaidi's mushroom extract root" [effort:0] [noquality]	*HERBLORE*	/13/ \13h\	|+2|	%100%
+{Noaidi's mushroom}	(3)		[remove]	
+{Crowberries}		(5)		[remove]	
+{*Ritual Bowl}							'Ritual Bowl'
+{Rock}									'+for grinding'
+{Salt}				#0.1#	[remove]
+{Water}				#0.2#	[remove]
+[NAME:Noaidi's mushroom extract]
+
+
+//something to learn healing [obtain healing salve]
+.Healing Salve. "Healing Salve Leaves" [effort:0] [phys:hands] [noquality] *HERBLORE* [patch:10] /5/ \4h\ 
+{Yarrow *} 	#0.06# 		[remove] [patchwise] 	'Yarrow' 	
+{Heather *}	#0.01#		[remove] [patchwise]	'Heather'
+{* Fat} 	#0.04# 		[remove] [patchwise] 	'Fat'
+{Fire}
+{*Ritual Bowl}									'Ritual Bowl'
+{Shaman Hood}
+[NAME:Healing Salve]
+
+//learn herblore, obtain Herbal Potion, good for everything
+.Herbal Potion Sachet. "Herbal Potion STUB root" [effort:0] [phys:hands] [noquality] *HERBLORE* [patch:3] /25/ |+1|
+{Burdock *} 	#0.25# 		[remove] [patchwise] 	'Burdock' 	
+{Heather *} 	#0.15# 		[remove] [patchwise] 	'Heather'
+{Water}		#0.2#
+{Animal hide}	#0.4#		[remove] [patchwise]	
+{*Ritual Bowl}										'Ritual Bowl'
+{Fire}
+{Shaman Hood}
+[NAME:Herbal potion sachet]
+
+
+//learn herblore, irresistible concoction
+.Junkars Bait. "Branch" [noquality][effort:0] [phys:hands] *HERBLORE* [patch:10] /12/ %100% |+2|
+{Golden rod *}		#0.2#	[remove] [patchwise] [noquality]	'Golden Rod'	
+{Insects}			#0.15#	[remove] [patchwise] [noquality]	'Insects'
+{Meadsweet *}		#0.12#	[remove] [patchwise] [noquality]	'Meadsweet'
+{Mushrooms}			#0.1#	[remove] [patchwise] [noquality]	'Eclectic Mushrooms'
+{Salt}				#0.09#	[remove] [patchwise] [noquality]	'Salt'
+{*Ritual Bowl}				[ground] 							'Ritual Bowl'
+{Rock} 						[ground] [noquality] 				'+(for grinding)'
+{*Shaman Staff}			[noquality] 							'Wave Shaman Staff (magically)'
+[NAME:Irresistible Concoction]
+[WEIGHT: 0.1]
+[TYPE:food]
+[SPOILAGE_DAYS:120]
+[TILEGFX:flo-bearpipe]
+
+
+
+//winter meal
+.Gather Insects. "Insect Leaves" [phys:hands] [effort:0] [noquality] *HERBLORE* /11/ 
+{[NEARBY_TILE:bushes]} 									'Find some bushes' 
+{Spruce twig} 			(1)		[remove] [noquality]	'A spruce twig to whack around'	
+[NAME:Insects]
+
+.Gather Birch-bark. "Bark" [noquality][effort:1][phys:hands] *CARPENTRY* /40/ |-1|
+{[NEARBY_TILE:Birch]}			'Find a Birch'
+{Knife}							<small knife>		
+[NAME:Birch-bark]
+[WEIGHT: 0.3]
+
+//Fastest way to get initiated into herblore, Create something you can sacrifice, or eat :)
+.Gift to Akras. "Turnip" *HERBLORE* /5/ \10\  %100% |+2| [patch:10]
+{Turnip} 				(1) [remove] [patchwise] 
+{Wondrous Mushroom} 	(1) [remove] [patchwise] 
+{Knife}
+{*Ritual Bowl}										'Ritual Bowl'
+[NAME:Gift to Akras]
+
+
+//to learn herblore the fast way :), eat it afterwards of course!
+.Study Herblore. "Herbal experiment root" [phys:hands] [effort:0] [noquality] *HERBLORE* /30/ \30\ %100% |+2|
+{Mushrooms} 			#0.5#	[remove]  'Random mushrooms' 
+{Herbs}					#1.5#	[remove]  'Random herbs'
+{Water}					#2#		[remove]  
+{*Ritual Bowl}					[ground]  'Ritual Bowl'
+{Fire}				
+[NAME:Herbal Experiment]
+
+
+.Extract Bone Marrow. "Bone Marrow STUB root" [effort:2] *CARPENTRY* /13/	[patch:5]
+{*Bone}		(1)	[remove] [patchwise] 	'Bone'	
+{Knife}
+[NAME:Bone Marrow]
+
+
+
+.Grow Mushrooms.  "Wondrous Mushroom" (5) [phys:hands] [effort:0] [noquality] *AGRICULTURE* /12/ \18d\ |+2|
+{[TILE:prepared soil]}					'Have a mushroom bed prepared'
+{[NEARBY_TILE:cave floor]}				'Leave some room around the bed'
+{Herbs}				#2#		[remove]	'Compost'
+{Mother Pipe *}		#0.2#	[remove]	'Mother Pipe'
+{Water}				#20#	[remove]	
+{*Shaman Staff}				[noquality]	'Wave Shaman Staff (magically)'
+[NAME:Wondrous Mushroom]
+[TILEGFX:_sh_shr-w]
+
+
+
+[SUBMENU_END:Shamanic Herblore]
+

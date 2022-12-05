@@ -1,0 +1,356 @@
+////////////////////////////////////////////////////////////////////////////
+// CAUTION: reading the recipes will spoil the fun of your eureka-moments //
+////////////////////////////////////////////////////////////////////////////
+
+
+
+[SUBMENU_START:Alteration]
+
+
+
+///////////////////////////////
+// RITUAL WEAPON ALTERATIONS //
+///////////////////////////////
+
+//formatted
+
+
+
+
+//Learn trapping [obtain possibly improved loop snares]
+.Junkars loop snare. "Loop snare" [effort:0] [phys:hands,one-armed] *TRAPPING* [patch:4] /35/ |+2| %100% 
+{*Loop Snare} 			[remove] [noquality] [patchwise]	 'Loop Snare'
+{*Sand mushroom} 		[remove] [noquality] [patchwise]	 'Sand Mushroom'
+{* pipe leaves}	#0.1# 	[remove] [noquality] [patchwise]	 'Pipe Leaves'
+{*Ritual bowl}			[noquality]							 'Ritual Bowl'	
+{Rock}					[noquality]	[ground]				 '+(for grinding)'
+{Knife}	
+
+
+
+
+.Magic Athame. "Skramasaksi" [effort:5] [phys:stance,arms] *HERBLORE* /15/ \13d\ |+2| 
+{[NEARBY_TILE:alder]}							'Be next to an Alder'
+{Wooden Stake} 			[remove] [noquality]	
+{Knife}					<Broad Knife>			'+(For inscriptions)'
+{Fire Stone} 			[remove] 				'+(magic sacrifice)'
+{Water}			#13#	[remove] [noquality]	'Water'
+{Shaman Hood} 	
+{*Shaman Staff} 								'Wield your Staff'	
+[NAME:Magic Athame]
+[POINT_ATTACK:5]
+[EDGE_ATTACK:1]
+[AD_CLASS:3/2]
+[SKILL:ritual]
+
+
+
+
+
+
+//superior = most lethal arrows possible
+.Bone Arrow. "Broadhead Arrow" [effort:1] [phys:hands,arms] *RITUAL* /35/ \5\ [patch:5] |-1| %-10%
+{Branch} 					[remove] [patchwise] [noquality]	
+{Eagle owl feather}	(4) 	[remove] [patchwise] [noquality]
+{*Bone}				#0.2#	[remove] [patchwise]				'Bone'
+{*Blood}			#0.02#  [remove] [patchwise] [noquality]	'Blood'
+{Knife}
+{Hunting Horn} 				[noquality] 						'Make a fancy sound'
+{Tuoni Bone Necklet} 											'+worn'
+[TILEGFX:_sh_b_arrow]
+[EDGE_ATTACK:7]
+[WEIGHT:0.15]
+[PRICE:10]
+
+
+
+.Alter the Spirit Drum. "Buckler" [phys:hands] [effort:0] *RITUAL* /180/ |-0| %50%
+{* Spirit Drum}					[remove]				'Spirit Drum'
+{Knotted Tille rope}	(4)		[remove] [noquality]
+{* Leather}  			#2# 	[remove] 				'Same animal leather'	[name:%s Spirit Drum]
+{Dye - *}				#0.5#	[remove] [noquality]	'Dye'
+{Feather}				#5#		[remove] [noquality]
+{Knife}		
+
+
+//a bit better javelin-recipe, train carpentry fast 
+.Harpoon. "Javelin" [effort:1] [phys:hands,one-armed] *CARPENTRY* /45/ \15\ %10% [patch:5] |+2|
+{Staff} 				[remove] [patchwise]
+{Axe} 			<Carving Axe> 								'+(for carving)'
+{Fire}		 												'+(for hardening the head)'
+{*Blood}		#0.1#   [remove] [patchwise] [noquality]	'Blood'
+{Feather} 		(8) 	[remove] [patchwise] [noquality]
+{Serpent Stone} 											'+(for inspiration)'
+{Hunting Horn} 			[noquality] 						'Make a fancy sound'
+[POINT_ATTACK:7]
+[PRICE:4]
+[WEIGHT:2.2]
+
+
+.Rite of Protection. "Guardian nettle seeds" [noquality][effort:5][phys:stance,arms] *SHIELD* /17/ \3d\ |+2| %100% [patch:9]
+{[TILE:bushes]}									'Find a thick bush'
+{Piru Warden}			[ground]				'Protection from Piru'
+{*Arrow}		(4)		[remove] 				'Arrows'			
+{*Bow}											'Shoot them in all directions'
+{Roundshield}									'Wield a roundshield'
+{Serpent Stone}			[remove]				'+for magic'
+{Shovel}										'Dig up your spoils'
+[NAME:Guardian nettle seeds]
+
+
+//mw = best bow possible
+.Nyyrikki's Bow. "Longbow" [effort:3] [phys:hands,arms] *RITUAL* %0% /200/ |+2|
+{Ram horn} 				(2) 	[remove]			
+{Slender tree trunk} 	(1)		[remove] [noquality]
+{Cord} 					(4) 	[remove]
+{Serpent Stone} 		(1)		[remove] 			'+(magic sacrifice)'
+{Knife} 	
+{Hunting Horn} 					[noquality] 		'Make a fancy sound'
+{Shaman Hood} 			
+[NAME:Nyyrikki's Bow]
+[WEIGHT:2.2]
+[POINT_ATTACK:9]
+[PRICE:210]
+
+
+
+
+//mw = best spear possible
+.Otso Spear. "Northern Spear" [effort:5] [phys:stance,arms] *RITUAL* %0% /233/ \45\ |+2|
+{[NEARBY_TILE:high cliff]}							'Face an impassable barrier'
+{Northern Spear}		[remove] [noquality]		'Northern Spear'
+{Kaumolais Spear}		[remove] [noquality]		'Eastern Spear'
+{Ango} 					[remove] [noquality]  		'Southern Spear'
+{Serpent Stone} 		[remove] 					'+(magic sacrifice)'
+{Stonecrop}			#5#	[remove] [noquality] 		'Stone Weed'
+{Tuoni Bone Necklet} 								'+worn'
+{Bear Shaman Staff} 								'Show what Shaman you are'
+[NAME:Otso Spear]
+[EDGE_ATTACK:4]
+[AD_CLASS:5/2]
+[1HPENALTY:10]
+[WEIGHT:6.5]
+[PRICE:290]
+
+
+
+
+
+
+
+
+
+
+
+//calla, bog flower
+.Ukkonen scimitar. "Njerpez Scimitar" [phys:hands,arms] [effort:1] *RITUAL* /30/ \12h\ |+2| %0% 
+{[TERRAIN:open_mire]} 										'Tread into the bog'
+{Scimitar} 							[noquality] [remove] 	
+{Tellervo's gift mushroom}	(1) 	[noquality] [remove]
+{Ukko's mushroom} 			(1) 	[noquality] [remove]	
+{Fire}
+{Marsh Calla leaves}		#1.3#	[noquality] [remove]
+{Mace} 														'+(to smash it awake)'
+{*Shaman Staff} 											'Wield your Staff (magic)'
+[NAME:Ukkonen scimitar]
+[EDGE_ATTACK:6]
+[AD_CLASS:4/3]
+[WEIGHT:2]
+
+
+
+//SERPENT STONES REQUIRED
+
+.Tursas Trident. "Wide Trident" [effort:5] [phys:stance,arms] *RITUAL* /15/ \2d\ %0% |+2|
+{[TILE:sea]}										'Enter the sea'
+{Trident} 					[remove]		
+{Serpent Stone} 			[remove] 				'+(magic sacrifice)'
+{*dead njerpez warrior}		[remove] [noquality]	'Slain enemy-warrior'
+{Knife}
+{Shaman Hood} 										'+worn'
+{Tuoni Bone Necklet} 								'+worn'
+[NAME:Tursas Trident]
+[WEIGHT:12]
+[AD_CLASS:4/6]
+[1HPENALTY:40]
+[POINT_ATTACK:7]
+[BLUNT_ATTACK:6]
+[PRICE:80]
+
+
+
+
+
+
+
+.Goshawk Mask.	"Fur Hood"	[noquality] [phys:hands][effort:1]	*RITUAL*	/171/		
+{Goshawk Leather}	#2.5#	[remove]				'Goshawk leather'		
+{*Fat}				#1#		[remove] [noquality]	'Fat'
+{Pot}												'+(to boil the leather)'
+{Fire}					
+{Water}				#4.3#	[remove] [noquality]
+{Cord}				(2)		[remove]
+{Knife}				<small knife>					
+{Serpent Stone} 	(1)		[remove]				'+(magic sacrifice)'
+[ARMOUR_MATERIAL:mail] 
+[WEIGHT:2.6]
+[PRICE:90]
+
+
+.Totem Warrior Gloves.	"Fur Mittens"	[noquality] [phys:hands][effort:1]	*RITUAL*	/343/ |+2|
+{* Leather}			#0.6#	[remove]		'Same animal leather'		[name:%s Warrior Gloves]
+{Beater}
+{Cord}				(2)		[remove]
+{Knife}				<small knife>
+{[TERRAIN:clearing]}						'Find open space in the forests'
+{[NEARBY_TILE:Big rock]}					'And a Seita stone'
+{Raw meat}			(1)		[remove]		'+(An offering)'
+{Serpent Stone} 	(1)		[remove]		'+(magic sacrifice)'
+[ARMOUR_MATERIAL:leather]
+[ARMOUR_COVERAGE:hand forearm elbow]
+[WEIGHT:0.7]
+[PRICE:40]
+
+
+
+.Archers Cloak.	"Fur overcoat" 	[noquality][phys:hands]	[effort:3]	*RITUAL*	/413/	\4h\
+{Forest Reindeer Leather}	#3#		[remove]				'Reindeer Leather'
+{Nettle *}					#2#		[remove]				'Nettle'
+{*Fat}						#2#		[remove] [noquality]	'Fat'
+{Water}						#10#	[remove] [noquality]
+{Beater}					
+{Serpent Stone}				(1)		[remove]				'+(sacrifice)'
+{*Shaman Staff}												'Shaman Staff (magic!)'	
+[ARMOUR_MATERIAL:leather]
+[ARMOUR_COVERAGE:shoulder upper_arm elbows forearm thorax abdomen hip groin thigh knee]
+[WEIGHT:3.3]
+[PRICE:100]
+
+
+
+//
+
+
+
+//NO MORE SERPENT STONES NEEDED
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////
+// FINAL TEST //
+////////////////
+
+
+
+
+
+
+//a way to quickly upgrade a serpent stone, considering stealth is an easy to raise skill
+.Capture the Serpent spirit.	"Egg"		[effort:0] 	*STEALTH*	/245/	|+2|
+{[TILE:hole in the ground]}									'Conceil yourself in a hole'
+{Spruce Twig}				(20)	[noquality]
+{*snake carcass*}					[remove] [noquality]	'A Serpent'	
+{Irresistible concoction}	(1)		[remove]				'Magic Bait'
+{Serpent Stone}						[remove]
+{*Shaman Staff}												'Shaman Staff (magic!)'		
+[NAME:Serpent Stone]
+[TYPE:valuable]
+[PRICE:100]
+[WEIGHT:4]
+
+
+
+.Lift a Curse.	"Ski stick" [effort:0] [noquality]	*RITUAL*	/5/	|+2|	%100%
+{[TILE:open door]}				'Clear your mind at home'
+{[NEARBY_TILE:Sea]}				'Find a cleansing place'
+{Eternal Well}		[ground]	'Have the construction ready'
+{*Shaman Staff}					'Wield Shaman Staff magically'
+{Howling cane}		[remove]	'Exorcise cursed item'			
+[NAME:Snorting cane]
+
+
+.Align with darkness.  "Javelin"	[noquality] [effort:5]	*RITUAL*	/444/	%100%	|+2|
+{[TILE:cave floor]}										'Tread into darkness'
+{Tursas Trident}				[remove]				'A weapon for the Wargod'
+{Stained Kaumolais Knife}		[remove] [noquality]	'Disgraced weapon' 
+{*dead maiden*}					[remove] [noquality]	'Innocent female'
+{Serpent stone Talisman}								'+worn'
+{Fire}
+{Harpoon}						[remove] [noquality]	
+{Wolf Spirit Drum}										'Drum and Howl for Wolf'
+//{*Ceremonial Mantle}									'Ceremonial Mantle worn'
+[NAME:Bolt of Kalma]
+[TILEGFX:_sh_deadb]
+[POINT_ATTACK:15]
+[AD_CLASS:4/1]
+[PRICE:100]
+[WEIGHT:1]
+//Booh, you aligned with the forces of darkness, but pretty impressive nonetheless.. Your price, an utterly destructive javelin
+
+
+.Align with light.	"birch-bark necklace" [noquality] [effort:-1]	*RITUAL*	/333/	%100%	|+2|
+{[TERRAIN:grove meadow clearing]}											'Find a sacred place'
+{Piru Warden}				[ground]										'Protection from Piru'
+{Snorting cane}				[remove]		 								'Pacified spirit'
+{*Arctic charr}				[remove] 										'Gift for grace'	
+{Board with *}				[remove][name:%s Talisman][naming:last word]	'Divine assignment'
+{Fire}
+{* Talisman}				[remove]										'Talisman of choice'
+{Squirrel Shaman Staff}														'Cute Shaman Staff (magic)'
+[PRICE:100]
+[ARMOUR_MATERIAL:iron] 
+[ARMOUR_COVERAGE:neck thorax]
+[WEIGHT:0.3]
+[TILEGFX:ar-necklace]
+//congratulations, you aligned with the forces of light! 
+
+.Release from anger. "Leather Rope"	[noquality] [effort:0] *RITUAL*	/500/	%100%	|+2|
+{Totem Pole}				[ground]			'Where?'
+{Blue Knotted Tille rope}	[remove]			'Untie emotions?'
+{Fire}	
+{Broadsword}				[remove]			'???'
+{Roundshield}				[remove]			'???'
+{Iron helm}					[remove]			'???'
+[NAME:Transparant rope]
+
+
+
+
+.Rite of Love. "Egg"	[noquality] [effort:0]	*RITUAL* /330/	%100%	|+2|
+{[TERRAIN:grove]}						'Find the maze of love'
+{* flowers bouquet} 		[remove]	'Bouquet of flowers'
+{Silver ring}		(2)		[remove]	'wedding ring'
+{Menninkainen}				[remove]	'a mole (?)'
+[NAME:Lovely egg]
+[TYPE:Valuable]
+
+
+
+.Enlightenment.	"Rock"	[noquality][effort:0]	*RITUAL*	/10/ 	%100% |-2|
+{Goldeneye Feather}					'Sotka freedom?'
+{Lovely Egg}						'promise of love?'
+{Lemminkainens brew}	#4#			'heal the ego?'
+{Transparant Rope}					'forgiveness?'
+{*Shaman Staff}						'Shaman Staff & Magic words'
+[NAME:MITAAN]
+[WEIGHT:0]
+[TILEGFX:_sh_nonex]
+[TYPE:Valuable]
+[PRICE:0]
+
+
+
+
+[SUBMENU_END:Alteration]

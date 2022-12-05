@@ -1,0 +1,274 @@
+////////////////////////////////////////////////////////////////////////////
+// CAUTION: reading the recipes will spoil the fun of your eureka-moments //
+////////////////////////////////////////////////////////////////////////////
+
+
+
+
+[SUBMENU_START:Ritual Supplements]
+
+
+/////////////////////
+// SPIRITUAL TOOLS //
+/////////////////////
+
+
+
+//for ceremonial purposes
+.Shaman Staff. "Hard Staff" [effort:2] [phys:arms,one-armed] *CARPENTRY* /80/ |+2| %10%
+{Thighbone} (1)		 	[remove] 				'A big strong bone'
+{* Fur} 	#1.5# 		[remove]				'Same animal hide'		[name:%s Shaman Staff]
+{Cord} 		(1) 		[remove]
+{Feather}	(3)			[remove] [noquality]
+{Knife}	
+[AD_CLASS:4/5] 
+[SKILL:ritual]
+[WEIGHT:4] 
+[PRICE:10]
+
+
+//for all crafting
+.Shaman Hood. "Fur hood" [phys:hands,arms][effort:2] *RITUAL* /240/ |+1| 
+{Bear Fur} 		#0.3#	[remove] 
+{Wolf Fur} 		#0.2# 	[remove]
+{Lynx Fur} 		#0.2# 	[remove] 
+{Glutton Fur} 	#0.1# 	[remove]
+{Cord} 			(3) 	[remove]
+{Knife} 		<small knife> 		'+for delicate work'
+[ARMOUR_MATERIAL:leather]
+[WEIGHT:0.8]
+[PRICE:45]
+
+//for looking neat [dancing]
+.Saami Boots. 		"Leather Boots" [phys:hands,arms] [effort:2] *RITUAL* /190/ |+1| %5% 
+{Leather} 			#1# 	[remove]	'Leather'	
+{Animal hide} 		#0.5#	[remove]
+{Snake Leather} 	#0.1# 	[remove] 
+{Cord} 		(2) 	[remove]	
+{Knife} 	<Small knife> 	'+for delicate work'
+[WEIGHT:1.6]
+[PRICE:30]
+
+//Naideh = priests 
+.Naideh Headcloth.	"Linen veil"	[noquality] [phys:hands] [effort:0]	*RITUAL*	/65/	\1h\	
+{Linen*}		#0.3#	[remove]	'Linen Cloth'
+{Dye - *}		#0.3#	[remove]	'Same color Dye'	[name:%s Naideh Headcloth][naming:last word]
+{Cord}			(1)		[remove]
+{Knife}			<small knife>		'+for delicate work'
+[PRICE:8]
+
+
+//
+.Ceremonial Mantle.	"Linen Undergarment"	[effort:1]	*RITUAL*	/260/	\1h\	
+{Linen *}	#2#	[remove]	'Linen'
+{Leather}	#0.5#	[remove]
+{Dye - *}	#1#	[remove]	'Same color Dye'	[name:%s Ceremonial Mantle][naming:last word]
+{Cord}		(6)	[remove]	
+{Knife}		<small knife>	'+for delicate work'
+[PRICE:30]
+[WEIGHT:2.5]
+
+
+
+
+
+//specific cermonies, yeah you could use it as a weak shield, why not?
+.Noaidi's Drum. "Buckler" [phys:hands,arms] [effort:1] *CARPENTRY* /353/ \1d\ |+2| 
+{Board} 	(1)		[remove]
+{Axe} 		<Splitting Axe>		'+to split the board'
+{Water}		#10# 	[remove]	'+to soak'
+{Wooden tub} 		[noquality]	'+for the mold'
+{Fire} 							'+to steam'
+{Cord} 		(2)		[remove]
+{* Leather}	#2# 	[remove] 	'Same animal leather'	[name:%s Spirit Drum]
+{Knife}
+[AD_CLASS:0/1]
+[WEIGHT:6]
+[PRICE:10]
+
+
+.Noaidi Long vest. "Fur overcoat" [noquality] [effort:1] [phys:hands,one-armed] *RITUAL* /340/ \120\
+{Woollen *}		#5#		[remove]	'Wool'
+{Dye - *}		#0.6#	[remove]	'Dye'
+{Knife}			<small knife>
+{Cord}			(2)		[remove]	
+{Lamellar *} 	#2#		[remove]	'Lamellar'
+{Feather}		(50)	[remove]
+{*Shaman Staff}						'Shaman Staff & Magic words'
+[ARMOUR_COVERAGE:shoulder upper_arm thorax abdomen hip groin thigh knee]
+[WEIGHT:6.5]
+[NAME:Noaidi Long Vest]
+[PRICE:26]
+
+
+
+
+.Ritual Bowl. "Wooden Bowl" [phys:hands] [effort:0] *RITUAL* /60/ \60\ |+2|
+{Wooden bowl}		[remove]
+{Dye - *}	#.5#	[remove]	'Same color Dye'	[name:%s Ritual Bowl][naming:last word]
+
+
+
+//for lethality
+.Tuoni Bone Necklet. "Birch-bark Necklace" [phys:hands,arms] [effort:1] *RITUAL* /100/ |+2| %15% 
+{Birch-bark*} 	#0.2#	[remove]				'Birch-bark'
+{Swan Leather} 	#0.3#	[remove]
+{Raven feather}	(2)		[remove] [noquality] [ground]
+{*carcass*}				[remove] [noquality]	'Small animal carcass for bones'
+{Cord} 			(1)		[remove]	
+{Knife} 	<Small knife>
+{Shaman Hood} 			[optional]
+[ARMOUR_MATERIAL:leather]
+[PRICE:50]
+[WEIGHT:0.2]
+
+
+
+/////////////////////
+// RITUAL COMMERCE //
+/////////////////////
+
+
+
+//make some value from your uninspired stones, you can wear them as well, who knows it might help?
+.Talisman. "Bandage" *CARPENTRY* /111/ %10%	|-0|
+{* Stone} 			[remove]				'Spirited Stone'	[name:%s Talisman][naming:original] 
+{Axe} 				<handaxe> 				'+to break the stone'
+{Leather} 	#0.2# 	[remove]
+{Cord} 		(1)		[remove]
+{Dye - *}	#0.05#	[remove][noquality]		'Dye'
+{Feather}			[remove][noquality]
+{Knife} 			<Small knife>
+{Shaman Hood} 		[optional]
+[TYPE:armour]
+[PRICE:40]
+[WEIGHT:0.1]
+[TILEGFX:ar-necklace]
+
+
+
+
+///////////////////////////////////
+// ACQUIRE SPIRITUAL INGREDIENTS //
+///////////////////////////////////
+
+
+
+
+//meditation
+.Totem Bench. "Log" [phys:hands,arms] [effort:3] [noquality] *CARPENTRY* /240/ \1\ |+2|
+{Tree trunk}	 				[remove] [ground] 
+{* Leather} 			#8# 	[remove]		'Same animal leather'	[name:%s Totem Bench]
+{Tying equipment} 		(8) 	[remove] 
+{Knife} 						[ground]		'+(to cut the leather)'
+{Axe} 	<Broad axe> 			[ground]		'+(pref. Broad axe)'
+[TILEGFX:_sh_ttmb]
+
+
+//meditation
+.Tallow Candle. "Firewood" [phys:hands] [effort:0] [noquality] *CARPENTRY* [patch:10] /15/ \60\ |-1|
+{* Fat}		#0.15#	[remove] [patchwise]	'Fat'
+{Pot} 										'+to heat the fat'
+{Fire} 										'+nearby'
+{Linen *}  	#0.05#	[remove] [patchwise] 	'Linen Cloth'	
+{Bark} 		#0.2# 	[remove] [patchwise] 	'+for the mold'
+{Knife} 	<Small knife>
+[name:Tallow Candle]
+[WEIGHT:0.4]
+[PRICE:0.4]
+[TYPE:tool]
+[TILEGFX:it-candle]
+
+
+.Totem Pole. "Log" [phys:hands,stance,arms] [effort:2] [noquality] *CARPENTRY* /500/ \1\ |+2|
+{Log}					[remove]
+{Axe}					<Carving Axe>
+{Dye - Red}		#1#		[remove]		"Red Dye"
+{Dye - Blue}	#0.7#	[remove]		"Blue Dye"
+{Dye - Green}	#0.7#	[remove]		"Green Dye"
+{Dye - Murky}	#0.5#	[remove]		"Murky Dye"
+[TILEGFX:_sh_ttmpl]
+[NAME:Totem Pole]
+[WEIGHT:360]
+
+
+.Paint Rocks.	"rock"	[phys:hands] [effort:0]	[noquality]	*COMMON*	/2/	\30\	[patch:20]
+{Rock}						[ground] [remove] [patchwise]
+{Dye - Red}		#0.05#		[remove] [patchwise]			"Red Dye"
+[TILEGFX:_sh_mar_r]
+[NAME:red rock]
+
+
+
+/////////////////////////////////////////////////////////////
+/// FAST FIRE PREPARATION OUT ///////////////////////////////
+// isn't that useful really, and too many recipes allready //
+/////////////////////////////////////////////////////////////
+
+//something to make firebuilding less cumbersome
+//.Fire Bow.	"Juniper Bow"	[effort:2]	[phys:hands]	*CARPENTRY*	/60/	|-1|
+//{Slender tree trunk}		[ground] [remove] [noquality]
+//{Cord}						[remove]
+//{Knife}
+
+
+//in conjunction with timber, more prepare time would be realistic
+//.Prepare Tinder.	"Branch"	[effort:0] [noquality]	*HERBLORE*	/4/	\28d\	[patch:20]
+//{[TILE:Shelter]}									'Dry in a shelter'
+//{Golden Rod*}		#0.1#	[remove] [patchwise]	'Golden rod parts'
+//{Birch-bark*}		#0.1#	[remove] [patchwise]	'Birch-bark'		
+//{Rock} 				(1)		[ground] [noquality] 	'+(for grinding)'
+//[name:Tinder]
+
+
+//.Prepare Fire.	(10)	"Firewood"	[effort:4] [phys:hands,arms [noquality] /7/ \1\	*TIMBERCRAFT*	
+//{[NEARBY_TILE:birch]}	'Have a Birch near'
+//{Fire bow}
+//{Tinder}		(1)		[remove] 
+//[name:Smouldering wood]
+
+
+.Construct Piru Warden. 	"Log"	[effort:1] [phys:hands,arms,stance] [noquality] /112/ \1\ *RITUAL*
+{[TILE:GROUND]}						'Pick a place to consecrate'
+{Thighbone}			(6)	 [remove]	'Big bones'
+{Javelin}			(2)  [remove]
+{Animal hide}		#12# [remove]
+{Cord}				(3)	 [remove]
+{Feather}			(13) [remove]
+{Knife}				
+[WEIGHT:260]
+[NAME:Piru Warden]
+[TILEGFX:_sh_marker]
+
+
+
+//invoke some nightmares
+.Catch a Menninkäinen. "Insect Leaves"	[phys:hands] [effort:1] [noquality] *RITUAL* /611/ |+2|
+{[TILE:road]}							'Wait at a road'
+{Junkars loop snare}		[remove]					
+{*berries}					[remove]	'Some berries'
+{* Spirit Drum}							'Chant and drum (magically)'
+{Shaman Hood}				[optional]
+{[NEARBY_TILE:road]}					'This might just work..'
+[NAME:Insects]
+
+
+.Eternal Well.	"Stone"	[effort:0]] [phys:hands,arms,stance] [noquality] 	/543/ 	\1\ *BUILDING* 	|-0|
+{[NEARBY_TILE:open door]}		'Let us do this right..'
+{[TILE:sea]}					'Climb in a hole in the earth'
+{[NEARBY_TILE:ground]}			'Sand nearby'
+{Stone}					(60)	[remove]
+{Rock}					(140)	[remove]
+{Axe}					
+{Shovel}
+[NAME:Eternal Well]
+[WEIGHT:1000]
+[TILEGFX:_sh_well]
+
+
+
+
+[SUBMENU_END:Ritual Supplements]
+
+
+

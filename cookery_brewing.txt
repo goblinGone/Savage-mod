@@ -1,0 +1,45 @@
+[SUBMENU_START:Brewing]
+
+.Brew mead. *COOKERY* /30/ \30d\ %20% :148:  
+{*honey combs} #3# 'Honey combs' [remove] [boil] [name:Mead]
+{Water} #6# 'water to boil' [remove] [boil]
+{Barrel plug} '+to cap it off' [remove]  
+
+.Brew berry mead. *COOKERY* /30/ \30d\ %20% :148:  
+{Berries} #1# [boil] [remove] [name:%s mead]
+{*honey combs} #2# 'Honey combs' [remove] [boil]
+{Water} #6# 'water to boil' [remove] [boil]
+{Barrel plug} '+to cap it off' [remove]  
+{Knife}	'+for chopping berries' 
+
+.Brew beer. *COOKERY* /30/ \10d\ %20% :148:
+{Malted*} #3# 'Malt' [remove] [boil] [name:Beer] 
+{Hops} #2# [remove] [boil]
+{Berries} #1# '+for flavor' [remove] [boil] [optional] [name:%s beer]
+{Water} #3# 'water to boil' [remove] [boil]
+{Barrel plug} '+to cap it off'
+
+.Brew wine. *COOKERY* /30/ \30d\ %20% :148:
+{Crushed*} 'Crushed berries' #5# [boil] [remove] [name:%s wine] [naming:last word]
+{Water}	#4# 'water to boil' [remove] [boil]
+{Barrel plug} '+to cap it off' [remove]
+
+.Crush & filter berries. *COOKERY* [effort:2] /2h/ :148:
+{Berries} #5# [remove] [boil] [name:Crushed %s]
+{Wooden tub} '+for mashing'
+{Cloth} #1# '+for filtering the pulp'
+[TILEGFX:br-wdtub]
+
+.Prepare grains for malting. *COOKERY* /1h/ \14d\
+{Grains} #10# [remove] [bake] [name:Prepared %s]
+{[TILE:Inside of a building]} 'Must be inside for drying'
+[COOK_WEIGHT_DIV:2]
+[TILEGFX:br-dry]
+
+.Malting. *COOKERY* /30/ \7d\ :148:
+{Prepared*} #5# 'Prepared grains' [remove] [bake] [name:Malted %s] [naming:last word]
+{Branch} '+for cracking the hulls'
+{Water} #0.5#
+[TILEGFX:br-malt]
+
+[SUBMENU_END:Brewing]
