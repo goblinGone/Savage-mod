@@ -1,0 +1,6 @@
+
+.Savage craft.		-D-	*MAKE*
+.knapping.			-K- *MAKE*
+.Savage food.		-X- *COOKERY*
+
+-end

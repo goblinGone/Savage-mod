@@ -1,0 +1,62 @@
+
+
+//well, it's up to you to not exploit these by deconstructing sea's and rapids etc ;). Worldmap-tiles, like hills luckily can't be deconstructed
+
+
+
+
+//mainly ornamental
+.Road.	-R- [effort:2] *BUILDING* /20/
+{Shovel}
+
+
+
+//has some uses, mainly if you might need a big rock around, also deconstructing those could be an option, better get a pickaxe though.. 
+.Big rock. "Seita Stone" -E- [effort:5] *BUILDING* /80/ 
+{Stone} 	(50) 	[ground][remove] 	
+{Shovel}
+[NAME:Seita stone]
+
+
+
+//mainly ornamental, not needed
+//.Water. "Ditch"		-I-	[effort:4] *BUILDING*	/180/
+//{[TILE:water]}		'Stand in the water'
+//{Shovel}
+
+
+//just convenient, partly misguiding, convenient for mushrooms
+.Rapids.	"Dig for groundwater"	-G-	[effort:4] *BUILDING*	/210/	|-1|	
+{*Shaman Staff}			'Shaman Staff and magic words'
+{* cane}				'Tuoni guidance'
+{[TILE:Cave floor]}		'See if it lights up'
+{Shovel}
+{Axe}
+
+
+.Prepared Soil. "Mushroom Bed" -M- [effort:3]	/90/ 	 *BUILDING*		|-2|
+{[TILE:cave floor]}				'Be inside a cavern'
+{Shovel}			
+{Branch}	(20)	[remove]	
+{Knife}							'+to chop the branches'
+{Water}		#20#	[remove]
+
+
+//build an indoors sea [or next to your house], why not? [Used in a quest]
+.Sea.	"Hole in the earth"	-H-	[effort:1] *BUILDING*	/1/	|-2|	
+{[TILE:open door]}									'Stand in a portal'
+{[NEARBY_TILE:inside of a building]}				'Ask permission (magic)'
+{Shaman Hood}										'Shaman Hood worn'
+{*Shaman Staff}										'Shaman Staff'
+{Iron *}					#10#	[remove]		'Iron'
+{Ukkonen Scimitar}					[remove]		'Invoke Lightningstrike'
+{[TILE:open door]}									'Think twice!'
+
+.Hole in the ground. "Dig in Frozen Ground" -X- [effort:5] *BUILDING* /250/ |+2|
+{Shovel}					
+{Axe}			
+{Fire}								'A big Fire'
+{Firewood}		(100)	[remove]
+
+
+

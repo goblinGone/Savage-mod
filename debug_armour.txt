@@ -1,0 +1,653 @@
+armourdump (in-game redone constant.obj)
+u=0 e=0
+u=1 e=1
+u=2 e=2
+u=3 e=3
+u=4 e=4
+u=5 e=5
+u=6 e=6
+u=7 e=7
+u=8 e=8
+u=9 e=9
+u=10 e=10
+u=11 e=11
+u=12 e=12
+u=13 e=13
+u=14 e=14
+u=15 e=15
+u=16 e=16
+u=17 e=17
+u=18 e=18
+u=19 e=19
+u=20 e=20
+u=21 e=21
+u=22 e=22
+u=23 e=23
+u=24 e=24
+u=25 e=25
+u=26 e=26
+u=27 e=27
+u=28 e=28
+u=29 e=29
+u=30 e=30
+u=31 e=31
+u=32 e=32
+u=33 e=33
+u=34 e=34
+u=35 e=35
+u=36 e=36
+u=37 e=37
+u=38 e=38
+u=39 e=39
+u=40 e=40
+u=41 e=41
+u=42 e=42
+u=43 e=43
+u=44 e=44
+u=45 e=45
+u=46 e=46
+u=47 e=47
+u=48 e=48
+u=49 e=49
+u=50 e=50
+u=51 e=51
+u=52 e=52
+u=53 e=53
+u=54 e=54
+u=55 e=55
+u=56 e=56
+u=57 e=57
+u=58 e=58
+u=59 e=59
+u=60 e=60
+u=61 e=61
+u=62 e=62
+u=63 e=63
+u=64 e=64
+u=65 e=65
+u=66 e=66
+u=67 e=67
+u=68 e=68
+u=69 e=69
+u=70 e=70
+u=71 e=71
+u=72 e=72
+u=73 e=73
+u=74 e=74
+u=75 e=75
+u=76 e=76
+u=77 e=77
+u=78 e=78
+u=79 e=79
+u=80 e=80
+u=81 e=81
+u=82 e=82
+u=83 e=83
+u=84 e=84
+u=85 e=85
+u=86 e=86
+u=87 e=87
+u=88 e=88
+u=89 e=89
+u=90 e=90
+u=91 e=91
+u=92 e=92
+u=93 e=93
+u=94 e=94
+u=95 e=95
+u=96 e=96
+u=97 e=97
+u=98 e=98
+u=99 e=99
+u=100 e=100
+u=101 e=101
+u=102 e=102
+u=103 e=103
+u=104 e=104
+u=105 e=105
+u=106 e=106
+u=107 e=107
+u=108 e=108
+u=109 e=109
+u=110 e=110
+u=111 e=111
+u=112 e=112
+u=113 e=113
+u=114 e=114
+u=115 e=115
+u=116 e=116
+u=117 e=117
+u=118 e=118
+u=119 e=119
+u=120 e=120
+u=121 e=121
+u=122 e=122
+u=123 e=123
+u=124 e=124
+u=125 e=125
+u=126 e=126
+u=127 e=127
+u=128 e=128
+u=129 e=129
+u=130 e=130
+u=131 e=131
+u=132 e=132
+u=133 e=133
+u=134 e=134
+u=135 e=135
+u=136 e=136
+u=137 e=137
+u=138 e=138
+u=139 e=139
+u=140 e=140
+u=141 e=141
+u=142 e=142
+u=143 e=143
+u=144 e=144
+u=145 e=145
+u=146 e=146
+u=147 e=147
+u=148 e=148
+u=149 e=149
+u=150 e=150
+u=151 e=151
+u=152 e=152
+u=153 e=153
+u=154 e=154
+u=155 e=155
+u=156 e=156
+u=157 e=157
+u=158 e=158
+u=159 e=159
+u=160 e=160
+u=161 e=161
+u=162 e=162
+u=163 e=163
+u=164 e=164
+u=165 e=165
+u=166 e=166
+u=167 e=167
+u=168 e=168
+u=169 e=169
+u=170 e=170
+u=171 e=171
+u=172 e=172
+u=173 e=173
+u=174 e=174
+u=175 e=175
+u=176 e=176
+u=177 e=177
+u=178 e=178
+u=179 e=179
+u=180 e=180
+u=181 e=181
+u=182 e=182
+u=183 e=183
+u=184 e=184
+u=185 e=185
+u=186 e=186
+u=187 e=187
+u=188 e=188
+u=189 e=189
+u=190 e=190
+u=191 e=191
+u=192 e=192
+u=193 e=193
+u=194 e=194
+u=195 e=195
+u=196 e=196
+u=197 e=197
+u=198 e=198
+u=199 e=199
+u=200 e=200
+u=201 e=201
+u=202 e=202
+u=203 e=203
+u=204 e=204
+u=205 e=205
+u=206 e=206
+u=207 e=207
+u=208 e=208
+u=209 e=209
+u=210 e=210
+u=211 e=211
+u=212 e=212
+u=213 e=213
+u=214 e=214
+u=215 e=215
+u=216 e=216
+u=217 e=217
+u=218 e=218
+u=219 e=219
+u=220 e=220
+u=221 e=221
+u=222 e=222
+u=223 e=223
+u=224 e=224
+u=225 e=225
+u=226 e=226
+u=227 e=227
+u=228 e=228
+u=229 e=229
+u=230 e=230
+u=231 e=231
+u=232 e=232
+u=233 e=233
+u=234 e=234
+u=235 e=235
+u=236 e=236
+u=237 e=237
+u=238 e=238
+u=239 e=239
+u=240 e=240
+u=241 e=241
+u=242 e=242
+u=243 e=243
+u=244 e=244
+u=245 e=245
+u=246 e=246
+u=247 e=247
+u=248 e=248
+u=249 e=249
+u=250 e=250
+u=251 e=251
+u=252 e=252
+u=253 e=253
+ac #0 - 9 | 0 | 0
+ac #1 - 16 | 6 | 0
+ac #2 - 48 | 30 | 0
+ac #3 - 48 | 62 | 0
+ac #4 - 16 | 126 | 0
+ac #5 - 240 | 62 | 0
+ac #6 - 0 | 240 | 0
+ac #7 - 1 | 0 | 0
+ac #8 - 0 | 0 | 1
+ac #9 - 0 | 128 | 1
+ac #10 - 0 | 192 | 1
+ac #11 - 0 | 1 | 0
+ac #12 - 0 | 6 | 0
+ac #13 - 16 | 0 | 0
+ac #14 - 32 | 0 | 0
+ac #15 - 64 | 0 | 0
+ac #16 - 0 | 64 | 0
+ac #17 - 0 | 128 | 0
+ac #18 - 25 | 0 | 0
+ac #19 - 48 | 126 | 0
+ac #20 - 13 | 0 | 0
+ac #21 - 128 | 0 | 0
+ac #22 - 240 | 126 | 0
+ac #23 - 8 | 0 | 0
+ac #24 - 240 | 254 | 0
+ac #25 - 0 | 248 | 1
+ac #26 - 0 | 120 | 0
+ac #27 - 0 | 24 | 0
+ac #27 - 0 | 24 | 0
+pow_a: 240 pow_b:240 pow_c:240pow#1:240
+pow#2:-16
+pow#3:240
+pow#4:240
+prot2pow#1:254
+prot2pow#2:-2
+prot2pow#3:254
+prot2pow#4:254
+#119 Bandage
+prot1:0 bits:00000000
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#120 Linen undershirt
+prot1:240 bits:00001111
+prot2:62 bits:01111100
+prot3:0 bits:00000000
+
+#121 Woollen undershirt
+prot1:240 bits:00001111
+prot2:62 bits:01111100
+prot3:0 bits:00000000
+
+#122 Linen undergarment
+prot1:240 bits:00001111
+prot2:254 bits:01111111
+prot3:0 bits:00000000
+
+#123 Woollen undergarment
+prot1:240 bits:00001111
+prot2:254 bits:01111111
+prot3:0 bits:00000000
+
+#124 Linen shirt
+prot1:48 bits:00001100
+prot2:30 bits:01111000
+prot3:0 bits:00000000
+
+#125 Nettle shirt
+prot1:48 bits:00001100
+prot2:30 bits:01111000
+prot3:0 bits:00000000
+
+#126 Woollen shirt
+prot1:48 bits:00001100
+prot2:30 bits:01111000
+prot3:0 bits:00000000
+
+#127 Linen tunic
+prot1:48 bits:00001100
+prot2:62 bits:01111100
+prot3:0 bits:00000000
+
+#128 Nettle tunic
+prot1:48 bits:00001100
+prot2:62 bits:01111100
+prot3:0 bits:00000000
+
+#129 Woollen tunic
+prot1:48 bits:00001100
+prot2:62 bits:01111100
+prot3:0 bits:00000000
+
+#130 Woollen overcoat
+prot1:240 bits:00001111
+prot2:126 bits:01111110
+prot3:0 bits:00000000
+
+#131 Woollen dress
+prot1:16 bits:00001000
+prot2:254 bits:01111111
+prot3:0 bits:00000000
+
+#132 Linen dress
+prot1:16 bits:00001000
+prot2:254 bits:01111111
+prot3:0 bits:00000000
+
+#133 Linen trousers
+prot1:0 bits:00000000
+prot2:248 bits:00011111
+prot3:1 bits:10000000
+
+#134 Nettle trousers
+prot1:0 bits:00000000
+prot2:248 bits:00011111
+prot3:1 bits:10000000
+
+#135 Woollen trousers
+prot1:0 bits:00000000
+prot2:248 bits:00011111
+prot3:1 bits:10000000
+
+#136 Woollen leggings
+prot1:0 bits:00000000
+prot2:248 bits:00011111
+prot3:0 bits:00000000
+
+#137 Nettle apron
+prot1:0 bits:00000000
+prot2:120 bits:00011110
+prot3:0 bits:00000000
+
+#138 Linen apron
+prot1:0 bits:00000000
+prot2:120 bits:00011110
+prot3:0 bits:00000000
+
+#139 Woollen apron
+prot1:0 bits:00000000
+prot2:120 bits:00011110
+prot3:0 bits:00000000
+
+#140 Linen footrags
+prot1:0 bits:00000000
+prot2:0 bits:00000000
+prot3:1 bits:10000000
+
+#141 Woollen socks
+prot1:0 bits:00000000
+prot2:0 bits:00000000
+prot3:1 bits:10000000
+
+#142 Woollen footrags
+prot1:0 bits:00000000
+prot2:0 bits:00000000
+prot3:1 bits:10000000
+
+#143 Linen veil
+prot1:9 bits:10010000
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#144 Woollen veil
+prot1:9 bits:10010000
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#145 Linen cowl
+prot1:9 bits:10010000
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#146 Woollen cowl
+prot1:9 bits:10010000
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#147 Nettle cowl
+prot1:9 bits:10010000
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#148 Nettle cloak
+prot1:16 bits:00001000
+prot2:126 bits:01111110
+prot3:0 bits:00000000
+
+#149 Woollen cloak
+prot1:16 bits:00001000
+prot2:126 bits:01111110
+prot3:0 bits:00000000
+
+#150 Woollen mittens
+prot1:0 bits:00000000
+prot2:1 bits:10000000
+prot3:0 bits:00000000
+
+#151 Leather cap
+prot1:1 bits:10000000
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#152 Leather belt
+prot1:0 bits:00000000
+prot2:24 bits:00011000
+prot3:0 bits:00000000
+
+#153 Leather shirt
+prot1:48 bits:00001100
+prot2:30 bits:01111000
+prot3:0 bits:00000000
+
+#154 Leather leggings
+prot1:0 bits:00000000
+prot2:248 bits:00011111
+prot3:0 bits:00000000
+
+#155 Leather shoes
+prot1:0 bits:00000000
+prot2:0 bits:00000000
+prot3:1 bits:10000000
+
+#156 Leather boots
+prot1:0 bits:00000000
+prot2:128 bits:00000001
+prot3:1 bits:10000000
+
+#157 Fur cap
+prot1:1 bits:10000000
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#158 Fur shirt
+prot1:240 bits:00001111
+prot2:30 bits:01111000
+prot3:0 bits:00000000
+
+#159 Fur mittens
+prot1:128 bits:00000001
+prot2:1 bits:10000000
+prot3:0 bits:00000000
+
+#160 Fur leggings
+prot1:0 bits:00000000
+prot2:248 bits:00011111
+prot3:0 bits:00000000
+
+#161 Fur hood
+prot1:13 bits:10110000
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#162 Fur footwear
+prot1:0 bits:00000000
+prot2:128 bits:00000001
+prot3:1 bits:10000000
+
+#163 Fur cloak
+prot1:16 bits:00001000
+prot2:126 bits:01111110
+prot3:0 bits:00000000
+
+#164 Birch-bark necklace
+prot1:8 bits:00010000
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#165 Birch-bark shoes
+prot1:0 bits:00000000
+prot2:0 bits:00000000
+prot3:1 bits:10000000
+
+#166 Birch-bark cap
+prot1:1 bits:10000000
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#167 Leather shin guards
+prot1:0 bits:00000000
+prot2:128 bits:00000001
+prot3:0 bits:00000000
+
+#168 Leather forearm guards
+prot1:128 bits:00000001
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#169 Leather cuirass
+prot1:0 bits:00000000
+prot2:6 bits:01100000
+prot3:0 bits:00000000
+
+#170 Fur overcoat
+prot1:240 bits:00001111
+prot2:126 bits:01111110
+prot3:0 bits:00000000
+
+#171 Fur overcoat
+prot1:240 bits:00001111
+prot2:126 bits:01111110
+prot3:0 bits:00000000
+
+#172 Fur overcoat
+prot1:240 bits:00001111
+prot2:126 bits:01111110
+prot3:0 bits:00000000
+
+#173 Fur overcoat
+prot1:240 bits:00001111
+prot2:126 bits:01111110
+prot3:0 bits:00000000
+
+#174 Fur overcoat
+prot1:240 bits:00001111
+prot2:126 bits:01111110
+prot3:0 bits:00000000
+
+#175 Mail Cowl
+prot1:9 bits:10010000
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#176 Long Mail Cowl
+prot1:25 bits:10011000
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#177 Mail Habergeon
+prot1:48 bits:00001100
+prot2:30 bits:01111000
+prot3:0 bits:00000000
+
+#178 Mail Hauberk
+prot1:16 bits:00001000
+prot2:62 bits:01111100
+prot3:0 bits:00000000
+
+#179 Long Mail Hauberk
+prot1:48 bits:00001100
+prot2:126 bits:01111110
+prot3:0 bits:00000000
+
+#180 Mail Leggings
+prot1:0 bits:00000000
+prot2:248 bits:00011111
+prot3:0 bits:00000000
+
+#181 Mail mittens
+prot1:0 bits:00000000
+prot2:1 bits:10000000
+prot3:0 bits:00000000
+
+#182 Iron helm
+prot1:1 bits:10000000
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#183 Iron spectacle helm
+prot1:5 bits:10100000
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#184 Lamellar hauberk
+prot1:16 bits:00001000
+prot2:62 bits:01111100
+prot3:0 bits:00000000
+
+#185 Lamellar cuirass
+prot1:0 bits:00000000
+prot2:6 bits:01100000
+prot3:0 bits:00000000
+
+#186 Lamellar rerebraces
+prot1:32 bits:00000100
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#187 Iron coudes
+prot1:64 bits:00000010
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#188 Lamellar forearm guards
+prot1:128 bits:00000001
+prot2:0 bits:00000000
+prot3:0 bits:00000000
+
+#189 Iron Kneecops
+prot1:0 bits:00000000
+prot2:64 bits:00000010
+prot3:0 bits:00000000
+
+#190 Lamellar shin guards
+prot1:0 bits:00000000
+prot2:128 bits:00000001
+prot3:0 bits:00000000
+
+--- [end] ---

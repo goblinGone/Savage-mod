@@ -1,0 +1,98 @@
+==========================================
+RenderDriverInfo #0
+NAME: direct3d
+ACCELERATED OK
+TARGETTEXTURE OK
+SOFTWARE: NO
+ pixelformat: SDL_PIXELFORMAT_ARGB8888
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+==========================================
+RenderDriverInfo #1
+NAME: opengl
+ACCELERATED OK
+TARGETTEXTURE OK
+SOFTWARE: NO
+ pixelformat: SDL_PIXELFORMAT_ARGB8888
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+==========================================
+RenderDriverInfo #2
+NAME: opengles2
+ACCELERATED OK
+TARGETTEXTURE OK
+SOFTWARE: NO
+ pixelformat: SDL_PIXELFORMAT_ARGB8888
+ pixelformat: SDL_PIXELFORMAT_ABGR8888
+ pixelformat: SDL_PIXELFORMAT_RGB888
+ pixelformat: SDL_PIXELFORMAT_BGR888
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+==========================================
+RenderDriverInfo #3
+NAME: software
+ACCELERATED !NO!
+TARGETTEXTURE OK
+SOFTWARE: YES
+ pixelformat: SDL_PIXELFORMAT_ARGB8888
+ pixelformat: SDL_PIXELFORMAT_ABGR8888
+ pixelformat: SDL_PIXELFORMAT_RGBA8888
+ pixelformat: SDL_PIXELFORMAT_BGRA8888
+ pixelformat: SDL_PIXELFORMAT_RGB888
+ pixelformat: SDL_PIXELFORMAT_BGR888
+ pixelformat: SDL_PIXELFORMAT_RGB565
+ pixelformat: SDL_PIXELFORMAT_RGB555
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+ pixelformat: SDL_PIXELFORMAT_UNKNOWN
+---------------------------------------------------
+Used renderer: direct3d
+renderer uses hardware acceleration
+render_scale_quality:2
+
+max_texture_width: 8192
+max_texture_height: 8192
+OK : targettexture rendering
+---------------------------------------------------
+

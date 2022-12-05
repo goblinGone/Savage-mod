@@ -1,0 +1,108 @@
+
+[SUBMENU_START:Savage food]
+
+
+.Herb bread loaf.	*COOKERY*	/45/	%30%	|-1|	:148:
+{Flour}	#2# [remove] [roast] [name]
+{Grains}	#0.5#	[remove] [roast] [optional]
+{Water}	#0.25#	[remove]
+{Seasoning}	#0.5#	[remove] [roast] [optional]
+{Butter}	#0.5#	'butter'	[remove] [roast] [optional]
+[TILEGFX:it-flbread]
+
+.Bread buns. (5)	    *COOKERY*	/45/ 		%30%	|-1|	:148:  
+{Flour}     #1.5#   [remove] [roast] [name]
+{Water}     #0.25#  [remove] 
+{Seasoning} #0.50#  [remove] [roast] [optional]
+{Butter}	#0.5#	'butter'	[remove] [roast] [optional]
+[TILEGFX:it-flbread]
+
+.Porridge. 		*COOKERY*	 /30/  	%50%	|-1|	:148:  
+{Flour} 	#3# 	[remove] [boil] [name]
+{Butter}	#0.5#	'butter'	[remove] [boil] [optional]
+{Water} 	#1# 	[remove]
+
+.Meat soup. 		*COOKERY* /30/  \45\	%20%	:148:  
+{Raw meat}	#2# 	[remove] [boil] [name]
+{Water}		#2.5#	[remove] [boil]
+{Vegetables}	#0.5#	[remove] [boil]
+{Butter}	#0.5#	'butter'	[remove] [boil] [optional]
+{Knife}	'+for chopping and peeling' 
+{Seasoning}	#0.25#	[remove] [optional] [boil]
+
+.Meat stew. 		*COOKERY* /30/  \240\	%20%	:148:  
+{Raw meat}	#3#	[remove] [bake] [name]
+{Water}		#0.25#	[remove] 
+{Knife}	'+for chopping'
+{Vegetables}	#0.5#	[remove] [bake] [optional]
+{Mushrooms}	#0.5#	[remove] [bake] [optional]
+{Seasoning}	#0.25#	[remove] [bake] [optional]
+
+.Hearty meat stew. *COOKERY* /10/ \120\	%20%	|1| :148: 
+{*grains} 'some grains'	#1.5# [remove] [boil]
+{Vegetables} 'some veg' #1.5# [remove] [boil]
+{Mushrooms}	'some mushies'	#0.5#	[remove] [boil] [optional]
+{*cut} 'meat' #3#	[remove] [boil] [name:%s stew]
+{Water}	#2#	[remove] [boil]
+{Seasoning}	#0.25#	[remove] [optional] [boil]
+
+.Hearty meat soup. *COOKERY* /10/ \120\	%20%	|1| :148: 
+{*grains} 'grains'	#1# [remove] [boil]
+{Vegetables}} 'some veg'	#1# [remove] [boil]
+{*Fat}    'Animal fat' #0.5#   [remove] [boil] [optional]
+{*berries} 'Berries to taste' #0.5#	[remove] [boil] [optional]
+{*cut} 'meat' #3#	[remove] [boil] [name:%s broth]
+{Water}	#2#	[remove] [boil]
+
+.Fish soup. 		*COOKERY* /30/  \45\	%20%	:148:  
+{Raw fish}      #2#     [remove] [boil] [name:%s soup]
+{Butter}	#0.5#	[remove] [boil] [optional]
+{Water}		#2.5#	[remove] [boil]
+{Vegetables}	#0.5#	[remove] [boil]
+{Knife}	'+for chopping and peeling' 
+{Seasoning}	#0.25#	[remove] [optional] [boil]
+
+.Salted fish soup. 		*COOKERY* /30/  \45\	%20%	:148:  
+{Salted*} 'some fish'      #2#     [remove] [boil] [name:%s soup]
+{Water}		#2#	[remove] [boil]
+{Vegetables}	#1#	[remove] [boil] [optional]
+{Grains}	#1#	[remove] [boil] [optional]
+{Knife}	'+for chopping and peeling' 
+{Seasoning}	#1#	[remove] [optional] [boil]
+
+.Smoked fish soup. 		*COOKERY* /30/  \45\	%20%	:148:  
+{Smoked*} 'some fish'      #2#     [remove] [boil] [name:%s soup]
+{Water}		#2#	[remove] [boil]
+{Vegetables}	#1#	[remove] [boil] [optional]
+{Grains}	#1#	[remove] [boil] [optional]
+{Knife}	'+for chopping and peeling' 
+{Seasoning}	#1#	[remove] [optional] [boil]
+
+.Dried fish soup. 		*COOKERY* /30/  \45\	%20%	:148:  
+{Dried*} 'some fish'      #2#     [remove] [boil] [name:%s soup]
+{Water}		#2#	[remove] [boil]
+{Vegetables}	#1#	[remove] [boil] [optional]
+{Grains}	#1#	[remove] [boil] [optional]
+{Knife}	'+for chopping and peeling' 
+{Seasoning}	#1#	[remove] [optional] [boil]
+
+.Vegetable stew.		*COOKERY* /5/  \90\	%20%	:148:  
+{Vegetables} 		#3#	[remove] [bake] [name:%s stew]
+{Water}			#0.25#	[remove] [bake]
+{butter}	#0.5#	[remove] [boil] [optional]
+{Mushrooms}		#0.5#	[remove] [bake] [optional]
+{Knife} '+for chopping and peeling'
+{Seasoning}		#0.25#	[remove] [bake] [optional]
+
+.Butter. "Fat" [effort:2]  *COOKERY* /120/	:148:
+{*Milk}			#2#	[remove] [roast]		'some milk'
+{*Branch}		(1)							'a branch to mix'
+{Wooden bowl}	(1) 
+[PRICE:5 per lb]
+[SPOILAGE_DAYS:50]
+[CARB:0]
+[FAT:81]
+[PROTEIN:1]
+
+
+[SUBMENU_END:Savage food]

@@ -1,0 +1,19 @@
+[SUBMENU_START:building]
+
+.Water. "Well"   *BUILDING*  /5h/   |+2|
+{Shovel}
+{Stone} (50) [remove] [ground] '+for walls'
+{Rock} (30) [remove] [ground] '+for gravel packing'
+{Wooden Bowl} [remove] '+for bailing water'
+{Rope} [remove] 
+
+
+
+
+[SUBMENU_END:building]
+
+-end
+
+
+
+

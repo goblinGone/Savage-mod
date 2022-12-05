@@ -315,12 +315,3 @@
 [Price:8]
 
 [SUBMENU_END:Woollen Garments]
-
-
-[SUBMENU_START:Testing]
-.Thread from Nettle. (10) "cord" [noquality] /1/
-.Woodsman's axe. %100% /1/
-.Pot. /1/ [noquality]
-.Wet Retted Nettles. (10) "hemp" [noquality] /1/
-
-[SUBMENU_END:Testing]

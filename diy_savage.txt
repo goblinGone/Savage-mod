@@ -1,0 +1,99 @@
+
+
+[SUBMENU_START:utility article]
+
+.Sauna scoop. *CARPENTRY* /60/ %10% |-1|
+{Block of wood} [remove]
+{Axe} <Carving Axe>
+{Knife}
+
+.Large barrel. "Bag" [effort:3] [phys:arms,one-armed] *CARPENTRY* /50/
+{Board} (10) [remove] [ground]
+{Tying equipment} (6) [remove]
+{Knife}
+{Axe} <Carving axe>
+[WEIGHT:30]
+[TILEGFX:r-lbar]
+[MATERIAL:wood]
+[TYPE:container]
+[CONT_CAPACITY:50]
+[PRICE:70]
+ 
+[SUBMENU_END:utility article]
+
+
+[SUBMENU_START:knapping]
+
+.Arrow head.	(3)	"Rock"	[phys:arms]	[effort:1]	*CARPENTRY*	/20/ %-10%	|-2|
+{Rock}	[remove]
+{Rock}				'A rock for knapping'
+{Branch}			'A branch for flaking'
+[WEIGHT:0.1]
+[PRICE:0.1]
+
+.Spear tip.	"Rock"	[phys:arms]	[effort:1]	*CARPENTRY*	/20/ %-10%	|-2|
+{Rock}	[remove]
+{Rock}				'A rock for knapping'
+{Branch}			'A branch for flaking'
+[WEIGHT:0.5]
+[PRICE:0.1]
+
+.Axe head.	"Rock" [phys:arms]	[effort:1]	*CARPENTRY*	/20/ %-10%	|-2|
+{Stone}	[remove]
+{Rock}				'A rock for knapping'
+{Branch}			'A branch for flaking'
+[WEIGHT:2]
+[PRICE:0.1]
+
+[SUBMENU_END:knapping]
+
+
+[SUBMENU_START:weapon]
+
+.Julma spear. "Spear" [phys:arms] [effort:2] *CARPENTRY* %30% /180/ |+2|
+{Hard staff}		(1)			[remove]	'a hard staff for the shaft'
+{Hunting knife}		(1)			[remove]	'a hunting knife for the head'
+{Cord}				(5)			[remove]
+{Knife}	<small knife>	
+{Feather} 			(10)		[remove]	[name:Julma %s spear]
+[POINT_ATTACK:11]
+[BLUNT_ATTACK:7]
+[EDGE_ATTACK:7]
+[AD_CLASS:5/3]
+[WEIGHT:9]
+[PRICE:390]
+
+.Surriistan javelin.	"javelin"	[phys:arms] [effort:2] *CARPENTRY* %+30%	/30/	|-1|
+{Staff}		(1)	[remove]	'a suitable staff'
+{Rock}		(1)	[remove]	'a rock for the sharp pointy end'	[noquality]
+{Stone}		(1)				'to knap rock into a spearhead'
+{*Cord}		(1)	[remove]										[noquality]
+{Feather}	(1)	[remove]
+[POINT_ATTACK:10]
+[AD_CLASS:4/2]
+[WEIGHT:3]
+[PRICE:10]
+
+.pole arm. "Spear" [effort:2] [phys:arms] *CARPENTRY* %-20% /3h/
+{Staff} (1) [remove]
+{* Scimitar} (1) [remove]
+{Leather rope} (1) [remove]
+{* Fur}	#0.5#	[remove]
+[EDGE_ATTACK:13]
+[AD_CLASS:2/5]
+[WEIGHT:9]
+[PRICE:850]
+[1H_PENALTY:50]
+
+[SUBMENU_END:weapon]
+
+[SUBMENU_START:Savage craft]
+
+.Njerpez scalp. "Birch-bark necklace" [phys:hands] [effort:0] *RITUAL* %-5% /15/ |+2|
+{* dead njerpez *}	(1) [ground] [remove]	'A conquered Nejerpez victim'
+{Knife}	<Broad knife>
+[WEIGHT:1]
+[TYPE:valuable]
+[PRICE:25]
+
+[SUBMENU_END:Savage craft]

@@ -4,14 +4,14 @@
 {Shovel}
 {[TERRAIN:spruce_mire pine_mire open_mire]}   'Be in a Mire'  
 
-.Charcoal.  (20) "Firewood" *SURVIVAL* /45/ \5d\ |-1| [patch:5]
+.Charcoal.  (20) "Firewood" *COMMON* /45/ \5d\ |-1| [patch:5]
 {Slender trunk}  (3) [remove][ground] '+for a chimney'  
 {Firewood}  (50) [remove][ground][patchwise] '+piled around it'
 {Shovel}       '+to cover it all in soil'
 {Fire}       '+lit nearby'
 {Torch}    [remove]  '+to transfer the flame'
    
-.Smelt Iron.    (2) "Rock" *SURVIVAL* |-1| /1h/  \1d\ [patch:5]
+.Smelt Iron.    (2) "Rock" *COMMON* |-1| /1h/  \1d\ [patch:5]
 {Shovel}      '+to dig a pit'
 {Bog Iron}   [remove] [patchwise]  [name:Bloom of %s] [naming:last word]
 {Charcoal}  (10) [remove] [patchwise] [ground]  
