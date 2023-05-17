@@ -1,2 +1,0 @@
-Wed Apr  5 12:25:47 2017
-  parsing DATA
